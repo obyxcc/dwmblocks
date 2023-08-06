@@ -4,16 +4,20 @@
 #include "util.h"
 
 Block blocks[] = {
-    {"sb-mail",    600,  1 },
-    {"sb-music",   0,    2 },
-    {"sb-disk",    1800, 3 },
-    {"sb-memory",  10,   4 },
-    {"sb-loadavg", 5,    5 },
-    {"sb-mic",     0,    6 },
-    {"sb-record",  0,    7 },
-    {"sb-volume",  0,    8 },
-    {"sb-battery", 5,    9 },
-    {"sb-date",    1,    10},
+    {"bplayerctl",    1,  1 },
+    {"bplayerctl-previous", 1,    2 },
+    {"bplayerctl-play", 1,    3 },
+    {"bplayerctl-next", 1,    4 },
+    {"bupdate", 1800,    6 },
+    // {"battery-blk",   1,    2 },
+    // {"brightness-blk",    1, 3 },
+    // {"volume-blk",    1, 4 },
+    // {"network-blk",  1,   5 },
+    {"bprintstatus",     1,    7 },
+    // {"bscreenshot",    0,  11 },
+    {"bdate",     5,    8 },
+    {"bcompositor",    0,  9 },
+    // {"bpower",     15,    5 },
 };
 
 const unsigned short blockCount = LEN(blocks);
